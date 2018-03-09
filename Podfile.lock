@@ -1,0 +1,46 @@
+PODS:
+  - CYLTabBarController (1.17.6)
+  - FDFullscreenPopGesture (1.1)
+  - GVUserDefaults (1.0.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.3)
+  - MOFSPickerManager (2.0.0)
+  - Toast (4.0.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - CYLTabBarController
+  - FDFullscreenPopGesture
+  - GVUserDefaults
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - MOFSPickerManager
+  - Toast
+  - YYCategories
+  - YYImage
+  - YYText
+
+SPEC CHECKSUMS:
+  CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MOFSPickerManager: 65973d99de9e598239d46783dc3466e76115b76f
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 00413393e8a7f2a4d2d11a556c0d3f34989a99fa
+
+COCOAPODS: 1.4.0
