@@ -13,6 +13,11 @@
 #import "AdaptFontViewController.h"
 #import "BlankPageViewController.h"
 #import "AnimationNavBarViewController.h"
+#import "ListExpandHideViewController.h"
+#import "ElementsCollectionViewController.h"
+#import "VerticalLayoutViewController.h"
+#import "HorizontalLayoutViewController.h"
+#import "KeyboardHandleViewController.h"
 
 @interface PreviewViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -58,6 +63,26 @@
     
     CellDataItem *yyText = [[CellDataItem alloc] initWithTitle:@"关于 YYText 使用" subTitle:@"未实现" type:UITableViewCellAccessoryNone];
     [self.items addObject:yyText];
+    
+    CellDataItem *listExpandHide = [[CellDataItem alloc] initWithTitle:@"列表的展开和收起" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
+    listExpandHide.destVC = [ListExpandHideViewController class];
+    [self.items addObject:listExpandHide];
+    
+    CellDataItem *elementsCollection = [[CellDataItem alloc] initWithTitle:@"App首页 CollectionView 布局" subTitle:@"未实现" type:UITableViewCellAccessoryDisclosureIndicator];
+    elementsCollection.destVC = [ElementsCollectionViewController class];
+    [self.items addObject:elementsCollection];
+    
+    CellDataItem *verticalLayout = [[CellDataItem alloc] initWithTitle:@"垂直流水布局" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
+    verticalLayout.destVC = [VerticalLayoutViewController class];
+    [self.items addObject:verticalLayout];
+    
+    CellDataItem *horizontalLayout = [[CellDataItem alloc] initWithTitle:@"水平流水布局" subTitle:@"未实现" type:UITableViewCellAccessoryDisclosureIndicator];
+    horizontalLayout.destVC = [HorizontalLayoutViewController class];
+    [self.items addObject:horizontalLayout];
+    
+    CellDataItem *keyboardHandle = [[CellDataItem alloc] initWithTitle:@"键盘处理" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
+    keyboardHandle.destVC = [KeyboardHandleViewController class];
+    [self.items addObject:keyboardHandle];
     
     [self.view addSubview:self.tableView];
 }

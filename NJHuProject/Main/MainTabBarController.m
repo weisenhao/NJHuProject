@@ -13,6 +13,7 @@
 #import "ExampleViewController.h"
 #import "MoreViewController.h"
 #import "ShareViewController.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @interface MainTabBarController ()
 
@@ -71,11 +72,22 @@
     MainNavigationController *shareNav = [[MainNavigationController alloc] initWithRootViewController:shareVC];
     
     self.viewControllers = @[previewNav, basicNav, exampleNav, moreNav, shareNav];
+    
+    [self initKeyboard];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initKeyboard {
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [IQKeyboardManager sharedManager].shouldToolbarUsesTextFieldTintColor = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = YES;
+    [IQKeyboardManager sharedManager].shouldPlayInputClicks = YES;
+    [IQKeyboardManager sharedManager].shouldShowToolbarPlaceholder = YES;
 }
 
 /*

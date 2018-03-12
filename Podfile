@@ -10,6 +10,9 @@ target 'NJHuProject' do
   # 下拉刷新
   pod 'MJRefresh'
   
+  #字典转模型
+  pod 'MJExtension'
+  
   #用于适配
   pod 'Masonry'
   
@@ -23,6 +26,9 @@ target 'NJHuProject' do
   pod 'YYText'
   pod 'YYImage'
   pod 'YYCategories'
+  
+  # 键盘管理
+  pod 'IQKeyboardManager'
   
   # 全局滑动
   pod 'FDFullscreenPopGesture'
