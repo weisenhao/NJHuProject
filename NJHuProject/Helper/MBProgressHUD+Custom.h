@@ -25,4 +25,14 @@
  */
 + (void)showAutoMessage:(NSString *)message ToView:(UIView *)view;
 
+/**
+ *  进度条View
+ *
+ *  @param view     要添加的View
+ *  @param text     显示的文字
+ *
+ *  @return 返回使用
+ */
++ (MBProgressHUD *)showProgressToView:(UIView *)view Text:(NSString *)text;
+
 @end

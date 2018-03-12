@@ -7,6 +7,9 @@ target 'NJHuProject' do
 
   # Pods for NJHuProject
   
+  # 网络请求
+  pod 'AFNetworking'
+  
   # 下拉刷新
   pod 'MJRefresh'
   

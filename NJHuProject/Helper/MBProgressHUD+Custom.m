@@ -11,6 +11,21 @@
 @implementation MBProgressHUD (Custom)
 
 #pragma mark - Public Method
+/**
+ *  进度条View
+ */
++ (MBProgressHUD *)showProgressToView:(UIView *)view Text:(NSString *)text {
+    if (view == nil) {
+        view = [UIApplication sharedApplication].delegate.window;
+    }
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.label.text = text;
+    hud.label.font = [UIFont systemFontOfSize:15.f];
+    // 代表需要蒙版效果
+    hud.backgroundView.style = MBProgressHUDBackgroundStyleBlur;
+    return hud;
+}
+
 // 快速显示一条提示信息
 + (void)showAutoMessage:(NSString *)message {
     [self showAutoMessage:message ToView:nil];

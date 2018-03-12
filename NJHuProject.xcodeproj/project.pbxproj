@@ -52,6 +52,10 @@
 		37F49892205294E700E4FABE /* HorizontalLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F49891205294E700E4FABE /* HorizontalLayoutViewController.m */; };
 		37F5E0AC20561F1400A89F1E /* SingleLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0AB20561F1400A89F1E /* SingleLabelCell.m */; };
 		37F5E0AF2056215A00A89F1E /* KeyboardHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0AE2056215A00A89F1E /* KeyboardHandleViewController.m */; };
+		37F5E0B2205654B600A89F1E /* DownLoadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */; };
+		37F5E0B62056585700A89F1E /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B52056585700A89F1E /* RequestManager.m */; };
+		37F5E0B920565DCE00A89F1E /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B820565DCE00A89F1E /* DownloadManager.m */; };
+		37F5E0BD20567CDE00A89F1E /* BSJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */; };
 		4177EBEEF60391E66747B123 /* libPods-NJHuProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D60214D5DCA22CF92E0878 /* libPods-NJHuProject.a */; };
 		987CE4F508FE57F769616152 /* libPods-NJHuProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5953702278BBC50F5F1D0211 /* libPods-NJHuProjectUITests.a */; };
 /* End PBXBuildFile section */
@@ -156,6 +160,14 @@
 		37F5E0AB20561F1400A89F1E /* SingleLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleLabelCell.m; sourceTree = "<group>"; };
 		37F5E0AD2056215A00A89F1E /* KeyboardHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardHandleViewController.h; sourceTree = "<group>"; };
 		37F5E0AE2056215A00A89F1E /* KeyboardHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandleViewController.m; sourceTree = "<group>"; };
+		37F5E0B0205654B600A89F1E /* DownLoadFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadFileViewController.h; sourceTree = "<group>"; };
+		37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadFileViewController.m; sourceTree = "<group>"; };
+		37F5E0B42056585700A89F1E /* RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		37F5E0B52056585700A89F1E /* RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		37F5E0B720565DCE00A89F1E /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		37F5E0B820565DCE00A89F1E /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		37F5E0BB20567CDE00A89F1E /* BSJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSJTabBarController.h; sourceTree = "<group>"; };
+		37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSJTabBarController.m; sourceTree = "<group>"; };
 		5953702278BBC50F5F1D0211 /* libPods-NJHuProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJHuProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62368C550141D6749AC096D5 /* libPods-NJHuProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJHuProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		696D60FE60B7F6B1562BCB22 /* Pods-NJHuProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJHuProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJHuProjectTests/Pods-NJHuProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 		37C3318D2050CBFA00E37819 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				37F5E0B32056584500A89F1E /* Network */,
 				37C6205A204FB605005BB7C5 /* MainTabBarController.h */,
 				37C6205B204FB605005BB7C5 /* MainTabBarController.m */,
 				37C3318E2050CC3000E37819 /* MainNavigationController.h */,
@@ -266,6 +279,8 @@
 				37F49891205294E700E4FABE /* HorizontalLayoutViewController.m */,
 				37F5E0AD2056215A00A89F1E /* KeyboardHandleViewController.h */,
 				37F5E0AE2056215A00A89F1E /* KeyboardHandleViewController.m */,
+				37F5E0B0205654B600A89F1E /* DownLoadFileViewController.h */,
+				37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -284,6 +299,7 @@
 			children = (
 				37C3319A2050D20900E37819 /* ExampleViewController.h */,
 				37C3319B2050D20900E37819 /* ExampleViewController.m */,
+				37F5E0BA20567CC400A89F1E /* BSJ */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -450,6 +466,26 @@
 				37F498882052864A00E4FABE /* ListExpendHeader.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		37F5E0B32056584500A89F1E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				37F5E0B42056585700A89F1E /* RequestManager.h */,
+				37F5E0B52056585700A89F1E /* RequestManager.m */,
+				37F5E0B720565DCE00A89F1E /* DownloadManager.h */,
+				37F5E0B820565DCE00A89F1E /* DownloadManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		37F5E0BA20567CC400A89F1E /* BSJ */ = {
+			isa = PBXGroup;
+			children = (
+				37F5E0BB20567CDE00A89F1E /* BSJTabBarController.h */,
+				37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */,
+			);
+			path = BSJ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -764,8 +800,11 @@
 				37C6202A204FB2D1005BB7C5 /* AppDelegate.m in Sources */,
 				37F4986F205259B600E4FABE /* AdaptFontCell.m in Sources */,
 				37F4985420521E7700E4FABE /* IntroductoryPagesView.m in Sources */,
+				37F5E0B62056585700A89F1E /* RequestManager.m in Sources */,
 				37F498752052613400E4FABE /* BlankPageViewController.m in Sources */,
+				37F5E0BD20567CDE00A89F1E /* BSJTabBarController.m in Sources */,
 				37F4986720523B8D00E4FABE /* YYFPSLabel.m in Sources */,
+				37F5E0B2205654B600A89F1E /* DownLoadFileViewController.m in Sources */,
 				37F4984D20521C6C00E4FABE /* GVUserDefaults+Custom.m in Sources */,
 				37F4987E2052770600E4FABE /* AnimationNavBarViewController.m in Sources */,
 				37F5E0AC20561F1400A89F1E /* SingleLabelCell.m in Sources */,
@@ -787,6 +826,7 @@
 				37C331A62050D43F00E37819 /* ShareViewController.m in Sources */,
 				37F49878205264FE00E4FABE /* EasyBlankPageView.m in Sources */,
 				37C331982050D13B00E37819 /* BasicViewController.m in Sources */,
+				37F5E0B920565DCE00A89F1E /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

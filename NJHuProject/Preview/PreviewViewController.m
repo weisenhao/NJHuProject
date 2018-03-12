@@ -18,6 +18,7 @@
 #import "VerticalLayoutViewController.h"
 #import "HorizontalLayoutViewController.h"
 #import "KeyboardHandleViewController.h"
+#import "DownLoadFileViewController.h"
 
 @interface PreviewViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -83,6 +84,10 @@
     CellDataItem *keyboardHandle = [[CellDataItem alloc] initWithTitle:@"键盘处理" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
     keyboardHandle.destVC = [KeyboardHandleViewController class];
     [self.items addObject:keyboardHandle];
+    
+    CellDataItem *downLoadFile = [[CellDataItem alloc] initWithTitle:@"文件下载" subTitle:@"不重复下载服务器未更新文件" type:UITableViewCellAccessoryDisclosureIndicator];
+    downLoadFile.destVC = [DownLoadFileViewController class];
+    [self.items addObject:downLoadFile];
     
     [self.view addSubview:self.tableView];
 }
