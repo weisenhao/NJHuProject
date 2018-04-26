@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
   - CYLTabBarController (1.17.6)
+  - DZNEmptyDataSet (1.8.1)
   - FDFullscreenPopGesture (1.1)
   - GVUserDefaults (1.0.2)
   - IQKeyboardManager (5.0.8)
@@ -24,6 +25,7 @@ PODS:
   - MJRefresh (3.1.15.3)
   - MOFSPickerManager (2.0.0)
   - Toast (4.0.0)
+  - TZImagePickerController (2.0.0.9)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -35,6 +37,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CYLTabBarController
+  - DZNEmptyDataSet
   - FDFullscreenPopGesture
   - GVUserDefaults
   - IQKeyboardManager
@@ -44,6 +47,7 @@ DEPENDENCIES:
   - MJRefresh
   - MOFSPickerManager
   - Toast
+  - TZImagePickerController
   - YYCategories
   - YYImage
   - YYText
@@ -51,6 +55,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
@@ -60,10 +65,11 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   MOFSPickerManager: 65973d99de9e598239d46783dc3466e76115b76f
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: 9bf89512bb6de53e87897f2e17e607c126a199d6
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 60c57a6ae035d7b16fc93b2dbc4b762ac8ccafb7
+PODFILE CHECKSUM: dc2bf5f28095ac7400aa8788b452888023d46f82
 
 COCOAPODS: 1.4.0

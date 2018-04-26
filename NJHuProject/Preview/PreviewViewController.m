@@ -19,6 +19,8 @@
 #import "HorizontalLayoutViewController.h"
 #import "KeyboardHandleViewController.h"
 #import "DownLoadFileViewController.h"
+#import "OfflineDownloadViewController.h"
+#import "UpLoadImagesViewController.h"
 
 @interface PreviewViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -88,6 +90,14 @@
     CellDataItem *downLoadFile = [[CellDataItem alloc] initWithTitle:@"文件下载" subTitle:@"不重复下载服务器未更新文件" type:UITableViewCellAccessoryDisclosureIndicator];
     downLoadFile.destVC = [DownLoadFileViewController class];
     [self.items addObject:downLoadFile];
+    
+    CellDataItem *offlineDownload = [[CellDataItem alloc] initWithTitle:@"文件 断点 离线 缓存 下载" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
+    offlineDownload.destVC = [OfflineDownloadViewController class];
+    [self.items addObject:offlineDownload];
+    
+    CellDataItem *upLoadImages = [[CellDataItem alloc] initWithTitle:@"照片上传" subTitle:nil type:UITableViewCellAccessoryDisclosureIndicator];
+    upLoadImages.destVC = [UpLoadImagesViewController class];
+    [self.items addObject:upLoadImages];
     
     [self.view addSubview:self.tableView];
 }

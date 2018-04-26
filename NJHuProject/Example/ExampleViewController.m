@@ -25,7 +25,7 @@
     self.items = [NSMutableArray array];
     
     CellDataItem *bsj = [[CellDataItem alloc] initWithTitle:@"百思不得姐" subTitle:@"BSJ" type:UITableViewCellAccessoryNone];
-    bsj.destVC = [BSJTabBarController class];
+//    bsj.destVC = [BSJTabBarController class];
     [self.items addObject:bsj];
     
     [self.view addSubview:self.tableView];

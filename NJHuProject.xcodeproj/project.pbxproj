@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		06340CDAF2C9725722692FBC /* libPods-NJHuProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62368C550141D6749AC096D5 /* libPods-NJHuProjectTests.a */; };
 		3750E4852053975000E5BD24 /* VerticalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3750E4842053975000E5BD24 /* VerticalFlowLayout.m */; };
+		37956F1E205F49A000689A15 /* UpLoadImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37956F1D205F49A000689A15 /* UpLoadImagesViewController.m */; };
+		37956F22205F4F8A00689A15 /* UpLoadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37956F21205F4F8A00689A15 /* UpLoadImageCell.m */; };
 		37C331902050CC3000E37819 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C3318F2050CC3000E37819 /* MainNavigationController.m */; };
 		37C331942050CFAD00E37819 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C331932050CFAD00E37819 /* PreviewViewController.m */; };
 		37C331982050D13B00E37819 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C331972050D13B00E37819 /* BasicViewController.m */; };
@@ -54,8 +56,10 @@
 		37F5E0AF2056215A00A89F1E /* KeyboardHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0AE2056215A00A89F1E /* KeyboardHandleViewController.m */; };
 		37F5E0B2205654B600A89F1E /* DownLoadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */; };
 		37F5E0B62056585700A89F1E /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B52056585700A89F1E /* RequestManager.m */; };
-		37F5E0B920565DCE00A89F1E /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0B820565DCE00A89F1E /* DownloadManager.m */; };
 		37F5E0BD20567CDE00A89F1E /* BSJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */; };
+		37F5E0C6205795E800A89F1E /* OfflineDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0C5205795E800A89F1E /* OfflineDownloadViewController.m */; };
+		37F5E0CA2057966700A89F1E /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0C92057966700A89F1E /* DownloadManager.m */; };
+		37F5E0CD205797B300A89F1E /* DownloadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5E0CC205797B300A89F1E /* DownloadInfo.m */; };
 		4177EBEEF60391E66747B123 /* libPods-NJHuProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D60214D5DCA22CF92E0878 /* libPods-NJHuProject.a */; };
 		987CE4F508FE57F769616152 /* libPods-NJHuProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5953702278BBC50F5F1D0211 /* libPods-NJHuProjectUITests.a */; };
 /* End PBXBuildFile section */
@@ -80,6 +84,10 @@
 /* Begin PBXFileReference section */
 		3750E4832053975000E5BD24 /* VerticalFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalFlowLayout.h; sourceTree = "<group>"; };
 		3750E4842053975000E5BD24 /* VerticalFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalFlowLayout.m; sourceTree = "<group>"; };
+		37956F1C205F49A000689A15 /* UpLoadImagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpLoadImagesViewController.h; sourceTree = "<group>"; };
+		37956F1D205F49A000689A15 /* UpLoadImagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpLoadImagesViewController.m; sourceTree = "<group>"; };
+		37956F20205F4F8A00689A15 /* UpLoadImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpLoadImageCell.h; sourceTree = "<group>"; };
+		37956F21205F4F8A00689A15 /* UpLoadImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpLoadImageCell.m; sourceTree = "<group>"; };
 		37C3318E2050CC3000E37819 /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		37C3318F2050CC3000E37819 /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		37C331922050CFAD00E37819 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
@@ -164,10 +172,14 @@
 		37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadFileViewController.m; sourceTree = "<group>"; };
 		37F5E0B42056585700A89F1E /* RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		37F5E0B52056585700A89F1E /* RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
-		37F5E0B720565DCE00A89F1E /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
-		37F5E0B820565DCE00A89F1E /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		37F5E0BB20567CDE00A89F1E /* BSJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSJTabBarController.h; sourceTree = "<group>"; };
 		37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSJTabBarController.m; sourceTree = "<group>"; };
+		37F5E0C4205795E800A89F1E /* OfflineDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfflineDownloadViewController.h; sourceTree = "<group>"; };
+		37F5E0C5205795E800A89F1E /* OfflineDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfflineDownloadViewController.m; sourceTree = "<group>"; };
+		37F5E0C82057966700A89F1E /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		37F5E0C92057966700A89F1E /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		37F5E0CB205797B300A89F1E /* DownloadInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadInfo.h; sourceTree = "<group>"; };
+		37F5E0CC205797B300A89F1E /* DownloadInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadInfo.m; sourceTree = "<group>"; };
 		5953702278BBC50F5F1D0211 /* libPods-NJHuProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJHuProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62368C550141D6749AC096D5 /* libPods-NJHuProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJHuProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		696D60FE60B7F6B1562BCB22 /* Pods-NJHuProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJHuProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJHuProjectTests/Pods-NJHuProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +255,17 @@
 			path = VerticalLayout;
 			sourceTree = "<group>";
 		};
+		37956F1F205F4F5C00689A15 /* UploadImages */ = {
+			isa = PBXGroup;
+			children = (
+				37956F20205F4F8A00689A15 /* UpLoadImageCell.h */,
+				37956F21205F4F8A00689A15 /* UpLoadImageCell.m */,
+				37956F1C205F49A000689A15 /* UpLoadImagesViewController.h */,
+				37956F1D205F49A000689A15 /* UpLoadImagesViewController.m */,
+			);
+			path = UploadImages;
+			sourceTree = "<group>";
+		};
 		37C3318D2050CBFA00E37819 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +304,8 @@
 				37F5E0AE2056215A00A89F1E /* KeyboardHandleViewController.m */,
 				37F5E0B0205654B600A89F1E /* DownLoadFileViewController.h */,
 				37F5E0B1205654B600A89F1E /* DownLoadFileViewController.m */,
+				37956F1F205F4F5C00689A15 /* UploadImages */,
+				37F5E0C72057964E00A89F1E /* Download */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -473,8 +498,6 @@
 			children = (
 				37F5E0B42056585700A89F1E /* RequestManager.h */,
 				37F5E0B52056585700A89F1E /* RequestManager.m */,
-				37F5E0B720565DCE00A89F1E /* DownloadManager.h */,
-				37F5E0B820565DCE00A89F1E /* DownloadManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -486,6 +509,19 @@
 				37F5E0BC20567CDE00A89F1E /* BSJTabBarController.m */,
 			);
 			path = BSJ;
+			sourceTree = "<group>";
+		};
+		37F5E0C72057964E00A89F1E /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				37F5E0CB205797B300A89F1E /* DownloadInfo.h */,
+				37F5E0CC205797B300A89F1E /* DownloadInfo.m */,
+				37F5E0C82057966700A89F1E /* DownloadManager.h */,
+				37F5E0C92057966700A89F1E /* DownloadManager.m */,
+				37F5E0C4205795E800A89F1E /* OfflineDownloadViewController.h */,
+				37F5E0C5205795E800A89F1E /* OfflineDownloadViewController.m */,
+			);
+			path = Download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,12 +759,14 @@
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/MOFSPickerManager/MOFSPickerManagerDemo/MOFSPickerManager/province_data.xml",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/province_data.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -807,26 +845,30 @@
 				37F5E0B2205654B600A89F1E /* DownLoadFileViewController.m in Sources */,
 				37F4984D20521C6C00E4FABE /* GVUserDefaults+Custom.m in Sources */,
 				37F4987E2052770600E4FABE /* AnimationNavBarViewController.m in Sources */,
+				37F5E0CA2057966700A89F1E /* DownloadManager.m in Sources */,
 				37F5E0AC20561F1400A89F1E /* SingleLabelCell.m in Sources */,
 				3750E4852053975000E5BD24 /* VerticalFlowLayout.m in Sources */,
 				37C331942050CFAD00E37819 /* PreviewViewController.m in Sources */,
 				37C331902050CC3000E37819 /* MainNavigationController.m in Sources */,
 				37F4988F205294D500E4FABE /* VerticalLayoutViewController.m in Sources */,
+				37F5E0C6205795E800A89F1E /* OfflineDownloadViewController.m in Sources */,
 				37F4987220525A2C00E4FABE /* Paragraph.m in Sources */,
 				37F49892205294E700E4FABE /* HorizontalLayoutViewController.m in Sources */,
 				37C6205C204FB605005BB7C5 /* MainTabBarController.m in Sources */,
 				37F4986A2052580C00E4FABE /* AdaptFontViewController.m in Sources */,
 				37F498842052813D00E4FABE /* Group.m in Sources */,
+				37F5E0CD205797B300A89F1E /* DownloadInfo.m in Sources */,
 				37C331BB205145E500E37819 /* NoNavBarViewController.m in Sources */,
+				37956F22205F4F8A00689A15 /* UpLoadImageCell.m in Sources */,
 				37F4986320522D8300E4FABE /* AdvertiseView.m in Sources */,
 				37C3319C2050D20900E37819 /* ExampleViewController.m in Sources */,
+				37956F1E205F49A000689A15 /* UpLoadImagesViewController.m in Sources */,
 				37F4987B20526DF000E4FABE /* MBProgressHUD+Custom.m in Sources */,
 				37F5E0AF2056215A00A89F1E /* KeyboardHandleViewController.m in Sources */,
 				37F498812052809100E4FABE /* ListExpandHideViewController.m in Sources */,
 				37C331A62050D43F00E37819 /* ShareViewController.m in Sources */,
 				37F49878205264FE00E4FABE /* EasyBlankPageView.m in Sources */,
 				37C331982050D13B00E37819 /* BasicViewController.m in Sources */,
-				37F5E0B920565DCE00A89F1E /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

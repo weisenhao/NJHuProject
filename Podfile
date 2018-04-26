@@ -45,6 +45,11 @@ target 'NJHuProject' do
   # 数据存储
   pod 'GVUserDefaults'
   
+  # 照片
+  pod 'TZImagePickerController'
+  
+  # 占位图
+  pod 'DZNEmptyDataSet'
   
   target 'NJHuProjectTests' do
     inherit! :search_paths

@@ -53,7 +53,7 @@
 - (UICollectionView *)collectionView {
     if (_collectionView == nil) {
         VerticalFlowLayout *flowLayout = [[VerticalFlowLayout alloc] init];
-        flowLayout.delegate = self;
+        flowLayout.delegate = self; 
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
         [_collectionView registerClass:[SingleLabelCell class] forCellWithReuseIdentifier:@"SingleLabelCell"];
         _collectionView.dataSource = self;

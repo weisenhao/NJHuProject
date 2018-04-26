@@ -54,7 +54,13 @@ static const UIEdgeInsets Vertical_EdgeInsets = {10, 10, 10, 10};
     
     w = floorf(w);
     // 高度由外界决定, 外界必须实现这个方法
-    CGFloat h = [self.delegate verticalFlowLayout:self collectionView:self.collectionView heightForItemAtIndexPath:indexPath itemWidth:w];
+    CGFloat h = 0;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(verticalFlowLayout:collectionView:heightForItemAtIndexPath:itemWidth:)]) {
+        h = [self.delegate verticalFlowLayout:self collectionView:self.collectionView heightForItemAtIndexPath:indexPath itemWidth:w];
+    } else {
+        NSAssert(false, @"请实现代理方法：verticalFlowLayout:collectionView:heightForItemAtIndexPath:itemWidth:");
+    }
+    
     
     // 拿到最后的高度最小的那一列, 假设第0列最小
     NSInteger indexCol = 0;
